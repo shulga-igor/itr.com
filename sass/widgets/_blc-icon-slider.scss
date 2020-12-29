@@ -1,0 +1,82 @@
+.blc-icon-slider{
+    padding: 65px 0;
+    @media screen and (max-width: 767px){
+        padding: 25px 0 45px;
+    }
+    .inner{
+        @include inner;
+    }
+    .title{
+        font-size: 48px;
+        margin-bottom: 52px;
+        text-align: center;
+        @media screen and (max-width: 991px){
+            font-size: 30px;
+        }
+        @media screen and (max-width: 767px){
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
+    }
+
+    .wrap-icon{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media screen and (max-width: 991px){
+            align-items: center;
+        }
+        .item{
+            max-width: 260px;
+            padding: 0 10px;
+            @media screen and (max-width: 991px){
+                max-width: 50%;
+            }
+            &-icon{
+                width: 163px;
+                height: 163px;
+                border-radius: 100%;
+                background: $second-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 46px;
+                @media screen and (max-width: 991px){
+                    margin-bottom: 20px;
+                }
+            }
+
+            .text{
+                margin-bottom: 27px;
+                @media screen and (max-width: 991px){
+                    max-width: 50%;
+                    margin: 0 auto;
+                    br{
+                        display: none;
+                    }
+                }
+                @media screen and (max-width: 767px){
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    P{
+        text-align: center;
+    }
+
+    &.simple-icon{
+        .item{
+            max-width: 311px;
+            @media screen and (max-width: 991px){
+                max-width: 50%;
+            }
+            &-icon{
+                background: transparent;
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}

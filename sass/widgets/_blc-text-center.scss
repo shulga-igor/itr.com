@@ -1,0 +1,10 @@
+.blc-text-center{
+    text-align: center;
+    padding: 60px 0 55px;
+    .inner{
+        @include inner-min;
+    }
+
+    
+}
+

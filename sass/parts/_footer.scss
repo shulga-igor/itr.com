@@ -1,0 +1,86 @@
+.footer{
+    padding: 40px 0 0 0;
+    .nav{
+        background: $base-white;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0 20px;
+            margin: 0 0 20px 0;
+            @media screen and (max-width: 767px){
+                flex-direction: column;
+            }
+            &.top-list{
+                li{
+                    @media screen and (max-width: 767px){
+                        margin-bottom: 15px;
+                    }
+                    &:last-child{
+                        a{
+                            border-right: none;
+                        }
+                    }
+                    a{
+                        color: $text-color;
+                        display: inline-block;
+                        font-weight: 700;
+                        line-height: 1;
+                        padding: 0 10px;
+                        text-decoration: none;
+                        border-right: 2px solid $text-color;
+                        text-transform: uppercase;
+                        @media screen and (max-width: 767px){
+                            border-right: none;
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            &.bottom-list{
+                margin-bottom: 30px;
+                li{
+                    @media screen and (max-width: 767px){
+                        margin-bottom: 10px;
+                    }
+                    &:last-child{
+                        a{
+                            border-right: none;
+                        }
+                    }
+                    a{
+                        color: $text-color;
+                        font-size: 14px;
+                        line-height: 1;
+                        display: inline-block;
+                        padding: 0 10px;
+                        text-decoration: none;
+                        border-right: 1px solid $text-color;
+                        @media screen and (max-width: 767px){
+                            border-right: none;
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .copy{
+        background-color: #f5f5f5;
+        padding: 25px 0;
+        p{
+            margin: 0;
+            text-align: center;
+            padding: 0 20px;
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+}

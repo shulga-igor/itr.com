@@ -1,0 +1,148 @@
+.header{
+  .inner{
+    max-width: $width + 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  &-top{
+    background: $primary-color-dark;
+    color: $base-white;
+
+
+    .navigation{      
+      ul{
+        margin: 0;
+        list-style: none;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        li{
+          &:last-child{
+            a{
+              border: none;
+            }
+          }
+          a{
+            color: $base-white;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1;
+            display: inline-block;
+            padding: 0 15px;
+            border-right: 1px solid $base-white;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  &-bottom{
+    background: $primary-color;
+    color: $base-white;
+    position: relative;
+    .inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 19px 20px;
+    }
+
+    .logo{
+      svg{
+        width: 100%;
+        height: auto;
+        max-width: 135px;
+        @media screen and (max-width: 767px){
+          max-width: 92px;
+        }
+      }
+    }
+    .mobile-btns{
+      &.show-menu{
+        .menu-btn{
+          display: none;
+        }
+        .close-btn{
+          display: block;
+        }
+      }
+    }
+    .navigation{
+      @media screen and (max-width: 991px){
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: $primary-color;
+        z-index: 10;
+        border-top: 2px solid $base-white;
+        height: 0;
+        transition: all linear .3s;
+        overflow: hidden;
+        &.show{
+          height: 390px;
+        }
+      }
+
+        .main-menu{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          @media screen and (max-width: 991px){
+            width: 100%;
+            flex-direction: column;
+            padding-top: 25px;
+          }
+          li{
+            @media screen and (max-width: 991px){
+              margin-bottom: 15px;
+            }
+            a{
+              font-size: 18px;
+              font-weight: 700;
+              display: inline-block;
+              padding: 0 10px;
+              text-transform: uppercase;
+              color: $text-light;
+              text-decoration: none;
+              &:hover{
+                text-decoration: underline;
+              }
+              @media screen and (max-width: 991px){
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .copy-menu{
+          list-style: none;
+          padding: 0 0 15px 0;
+          margin: 0;
+          li{
+            text-align: center;
+            margin: 15px 0;
+            a{
+              font-size: 14px;
+              color: $base-white;
+              text-decoration: none;
+            }
+          }
+        }
+    }
+
+
+
+  }
+}
