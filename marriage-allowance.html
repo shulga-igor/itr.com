@@ -47,14 +47,11 @@
                         <h4 class="quiz-sub-title">QUESTION 2</h4>
                         <h3 class="question-title">Have you or your partner already registered for marriage allowance?</h3>
                         <div class="quiz-range">
-                            <div class="range"><span style="width: 20%;"></span></div>
-                            <div class="quiz-range-num">20%</div>
+                            <div class="range"><span></span></div>
+                            <div class="quiz-range-num"></div>
                         </div>
                         <div class="radio-wrap">
-                            <label>
-                                <input type="radio" name="marriage-q1" value="yes">
-                                <span>Yes</span>
-                            </label>
+                            <a href="marriage-fail.html" class="btn min">Yes</a>
                             <label>
                                 <input type="radio" name="marriage-q1" value="no">
                                 <span>No</span>
@@ -70,18 +67,12 @@
                         <h4 class="quiz-sub-title">QUESTION 3</h4>
                         <h3 class="question-title">Are you married or in a legally registered civil partnership before April 2020? </h3>
                         <div class="quiz-range">
-                            <div class="range"><span style="width: 40%;"></span></div>
-                            <div class="quiz-range-num">40%</div>
+                            <div class="range"><span></span></div>
+                            <div class="quiz-range-num"></div>
                         </div>
                         <div class="radio-wrap">
-                            <label>
-                                <input type="radio" name="marriage-q2" value="yes">
-                                <span>Yes</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="marriage-q2" value="no">
-                                <span>No</span>
-                            </label>
+                            <a href="marriage-form.html" class="btn min">Yes</a>
+                            <a href="marriage-fail.html" class="btn min">No</a>
                         </div>
                         <div>
                             <a href="#" class="js-back back-btn"><svg width="29" height="20" viewBox="0 0 29 20"><path fill="#2754a7" d="M29.007 11.998H7.704l8.058 7.998h-5.696L-.007 10 10.066.004h5.696L7.704 8h21.303z"/></svg> Back to last question</a>
@@ -94,16 +85,16 @@
                         <h4 class="quiz-sub-title">QUESTION 4</h4>
                         <h3 class="question-title">Is YOUR income less than £12,500 <br />  a year?</h3>
                         <div class="quiz-range">
-                            <div class="range"><span style="width: 60%;"></span></div>
-                            <div class="quiz-range-num">60%</div>
+                            <div class="range"><span></span></div>
+                            <div class="quiz-range-num"></div>
                         </div>
                         <div class="radio-wrap">
                             <label>
-                                <input type="radio" name="marriage-q3" value="yes">
+                                <input type="radio" name="marriage-q3" class="next-yes" value="yes">
                                 <span>Yes</span>
                             </label>
                             <label>
-                                <input type="radio" name="marriage-q3" value="no">
+                                <input type="radio" name="marriage-q3" class="next-no" value="no">
                                 <span>No</span>
                             </label>
                         </div>
@@ -112,48 +103,63 @@
                         </div>
                     </div>
                   </div>
-                  <div class="step">
-                    <div class="quiz-main">
+                  <div class="step double">
+                    <div class="quiz-main q-yes">
                         <h2 class="quiz-name-title">marriage allowance</h2>
                         <h4 class="quiz-sub-title">QUESTION 5</h4>
                         <h3 class="question-title">Is your PARTNER's income between £12,501 and £50,000 a year?</h3>
                         <div class="quiz-range">
-                            <div class="range"><span style="width: 80%;"></span></div>
-                            <div class="quiz-range-num">80%</div>
+                            <div class="range"><span></span></div>
+                            <div class="quiz-range-num"></div>
                         </div>
                         <div class="radio-wrap">
                             <label>
                                 <input type="radio" name="marriage-q4" value="yes">
                                 <span>Yes</span>
                             </label>
-                            <label>
-                                <input type="radio" name="marriage-q4" value="no">
-                                <span>No</span>
-                            </label>
+                            <a href="marriage-fail.html" class="btn min">No</a>
                         </div>
                         <div>
                             <a href="#" class="js-back back-btn"><svg width="29" height="20" viewBox="0 0 29 20"><path fill="#2754a7" d="M29.007 11.998H7.704l8.058 7.998h-5.696L-.007 10 10.066.004h5.696L7.704 8h21.303z"/></svg> Back to last question</a>
                         </div>
                     </div>
+
+                    <div class="quiz-main q-no">
+                      <h2 class="quiz-name-title">marriage allowance</h2>
+                      <h4 class="quiz-sub-title">QUESTION 5</h4>
+                      <h3 class="question-title">Is your PARTNER's income less than £12,500 <br> a year?</h3>
+                      <div class="quiz-range">
+                          <div class="range"><span></span></div>
+                          <div class="quiz-range-num"></div>
+                      </div>
+                      <div class="radio-wrap">
+                          <label>
+                              <input type="radio" name="marriage-q5" value="yes">
+                              <span>Yes</span>
+                          </label>
+                          <label>
+                              <input type="radio" name="marriage-q5" value="no">
+                              <span>No</span>
+                          </label>
+                      </div>
+                      <div>
+                          <a href="#" class="js-back back-btn"><svg width="29" height="20" viewBox="0 0 29 20"><path fill="#2754a7" d="M29.007 11.998H7.704l8.058 7.998h-5.696L-.007 10 10.066.004h5.696L7.704 8h21.303z"/></svg> Back to last question</a>
+                      </div>
+                    </div>
                   </div>
+
                   <div class="step">
                     <div class="quiz-main">
                         <h2 class="quiz-name-title">marriage allowance</h2>
                         <h4 class="quiz-sub-title">QUESTION 6</h4>
-                        <h3 class="question-title">Is YOUR income between £12,501 and £50,000 a <br> year?</h3>
+                        <h3 class="question-title">Is YOUR income between £12,501 and £50,000 <br> a year?</h3>
                         <div class="quiz-range">
-                            <div class="range"><span style="width: 100%;"></span></div>
-                            <div class="quiz-range-num">100%</div>
+                            <div class="range"><span></span></div>
+                            <div class="quiz-range-num"></div>
                         </div>
                         <div class="radio-wrap">
-                            <label>
-                                <input type="radio" name="marriage-q5" value="yes">
-                                <span>Yes</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="marriage-q5" value="no">
-                                <span>No</span>
-                            </label>
+                          <a href="marriage-form.html" class="btn min">Yes</a>
+                          <a href="marriage-fail.html" class="btn min">No</a>
                         </div>
                         <div>
                             <a href="#" class="js-back back-btn"><svg width="29" height="20" viewBox="0 0 29 20"><path fill="#2754a7" d="M29.007 11.998H7.704l8.058 7.998h-5.696L-.007 10 10.066.004h5.696L7.704 8h21.303z"/></svg> Back to last question</a>

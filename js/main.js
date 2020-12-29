@@ -62,6 +62,7 @@ $(document).ready(function(e){
       $ ('.quiz-range .range span').css({
         'width' :  percent  + '%'
       });
+      $ ('.quiz-range .quiz-range-num').text( parseInt(percent)  + '%');
     }
     function slide(numSlide){
       slideBlc.css({
