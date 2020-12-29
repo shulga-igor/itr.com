@@ -167,7 +167,7 @@
     .btn{
         margin: 0 19px; 
     }
-    
+
     label{
         max-width: 195px;
         width: 100%;
@@ -266,5 +266,79 @@
             background-color: $primary-color;
             border-radius: 50%;
         }
+    }
+}
+
+
+.cost{
+    color: $primary-color;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 45px 0;
+}
+
+.text-under-form{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.form-wrap{
+    $form-text-color: #747474;
+    background: $base-white;
+    padding: 45px 66px 55px ;
+    width: 100%;
+    max-width: 946px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    .form-title{
+        color: $primary-color;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 11px 0;
+        text-align: left;
+    }
+
+    .wrap-field{
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+        .form-field{
+            border-radius: 10px;
+            border: 1px solid #bbbbbb;
+            background-color: #ffffff;
+            width: 100%;
+
+            color: $form-text-color;
+            padding: 16px 20px;
+            line-height: 1;
+            padding: 20px;
+        }
+        .min-text{
+            margin: 0;
+            text-align: right;
+            color: $form-text-color;
+            font-size: 16px;
+        }
+    }
+
+    .footer-text{
+        font-size: 18px;
+        color: $form-text-color;
+        text-align: center;
+        margin: 30px 0 45px;
+    }
+
+    .hide-field{
+        display: none;
+    }
+    .show-all-field{
+        display: block;
+        text-align: left;
+        color: $primary-color;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 14px;
     }
 }

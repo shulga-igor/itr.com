@@ -105,8 +105,28 @@ $(document).ready(function(e){
     })
 
     countPercent();
+    cost();
     
+    $(document).on('click', '.show-all-field',function(e){
+      e.preventDefault();
+      $(this).hide();
+      $('.wrap-field').removeClass('hide-field');
+    })
 
-
+    function cost(){
+      $('.cost span').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+      });
+    }
+    
+    new WOW().init();
     
 })
