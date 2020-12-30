@@ -3,6 +3,17 @@
     .header{
         .inner{
             justify-content: center;
+            @media screen and (max-width: 991px){
+                padding: 10px 20px;
+             }
+            
+        }
+        .logo{
+            img{
+                @media screen and (max-width: 991px){
+                   width: 90px;
+                }
+            }
         }
     }
     .wrapper{
@@ -44,6 +55,10 @@
     margin-bottom: 46px;
     text-transform: uppercase;
     margin-top: 0;
+    @media screen and (max-width: 991px){
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
     &.simple-color{
         color: $text-color;
     }
@@ -55,6 +70,9 @@
     }
     &.min-mar{
         margin-bottom: 25px;
+        @media screen and (max-width: 991px){
+            margin-bottom: 12px;
+        }
     }
 }
 .quiz-sub-title{
@@ -63,12 +81,27 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 31px;
+    @media screen and (max-width: 991px){
+        font-size: 18px;
+        margin-bottom: 15px;
+        br{
+            display: none;
+        }
+    }
 }
 
 .question-title{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 51px;
+    @media screen and (max-width: 991px){
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        br{
+            display: none;
+        }
+    }
 }
 
 .quiz-range{
@@ -104,12 +137,18 @@
         font-size: 45px;
         font-weight: 700;
         margin-top: 0;
+        @media screen and (max-width: 991px){
+            font-size: 24px;
+        }
     }
 }
 
 .first-list{
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 767px){
+        flex-direction: column;
+    }
     .item{
         width: 100%;
         max-width: 275px;
@@ -119,6 +158,10 @@
         border-radius: 10px;
         border: 2px solid transparent;
         transition: all linear .2s;
+        @media screen and (max-width: 767px){
+            margin: 0 0 20px 0;
+            max-width: 100%;
+        }
         &:hover{
             border-color: $primary-color;
         }
@@ -164,8 +207,18 @@
     align-items: flex-end;
     margin-top: 70px;
     padding-bottom: 15px;
+    @media screen and (max-width: 991px){
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
     .btn{
-        margin: 0 19px; 
+        margin: 0 19px;
+        @media screen and (max-width: 991px){
+            margin: 0 8px;
+            width: 50%;
+            max-width: calc(50% - 16px)!important;
+            font-size: 18px;
+        }
     }
 
     label{
@@ -173,6 +226,12 @@
         width: 100%;
         
         margin: 0 19px;
+        @media screen and (max-width: 991px){
+            margin: 0 8px;
+            width: 50%;
+            max-width: calc(50% - 16px)!important;
+            font-size: 18px;
+        }
         
         input{
             opacity: 0;
@@ -198,6 +257,9 @@
             background: $action-color;
             cursor: pointer;
             position: relative;
+            @media screen and (max-width: 991px){
+                font-size: 18px;
+            }
             &:before{
                 content: '';
                 position: absolute;
@@ -227,6 +289,10 @@
     color: $primary-color;
     text-decoration: none;
     margin-top: 65px;
+    @media screen and (max-width: 991px){
+        margin-top: 30px;
+        font-size: 18px;
+    }
     svg{
         margin: 0 15px 0 0;
     }
@@ -239,12 +305,20 @@
     flex-wrap: wrap;
     width: 60%;
     margin: 70px auto 0;
+    @media screen and (max-width: 767px){
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 .fail-text{
     text-align: left;
     font-size: 24px;
     margin-bottom: 35px;
+    @media screen and (max-width: 991px){
+        font-size: 18px;
+        margin: 0 0 20px 0;
+    }
 }
 .fail-list{
     text-align: left;
@@ -256,6 +330,10 @@
         font-size: 24px;
         margin: 0 0 30px 0;
         position: relative;
+        @media screen and (max-width: 991px){
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -275,12 +353,21 @@
     font-size: 60px;
     font-weight: 700;
     margin: 0 0 45px 0;
+    @media screen and (max-width: 991px){
+        font-size: 36px;
+        margin: 0 0 0px 0;
+    }
 }
 
 .text-under-form{
     text-align: center;
     font-size: 30px;
     margin-bottom: 45px;
+    @media screen and (max-width: 991px){
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
 }
 
 .form-wrap{
@@ -291,6 +378,9 @@
     max-width: 946px;
     border-radius: 10px;
     margin: 0 auto;
+    @media screen and (max-width: 991px){
+        padding: 15px 20px;
+    }
 
     .form-title{
         color: $primary-color;
@@ -298,12 +388,19 @@
         font-weight: 700;
         margin: 0 0 11px 0;
         text-align: left;
+        @media screen and (max-width: 991px){
+            font-size: 18px;
+        }
+        
     }
 
     .wrap-field{
         display: block;
         width: 100%;
         margin-top: 25px;
+        @media screen and (max-width: 991px){
+            margin-top: 15px;
+        }
         .form-field{
             border-radius: 10px;
             border: 1px solid #bbbbbb;
@@ -314,12 +411,18 @@
             padding: 16px 20px;
             line-height: 1;
             padding: 20px;
+            @media screen and (max-width: 991px){
+                padding: 15px;
+            }
         }
         .min-text{
             margin: 0;
             text-align: right;
             color: $form-text-color;
             font-size: 16px;
+            @media screen and (max-width: 767px){
+                font-size: 12px;
+            }
         }
     }
 
@@ -328,6 +431,10 @@
         color: $form-text-color;
         text-align: center;
         margin: 30px 0 45px;
+        @media screen and (max-width: 767px){
+            font-size: 12px;
+            margin: 15px 0 16px;
+        }
     }
 
     .hide-field{
@@ -340,5 +447,8 @@
         font-size: 16px;
         text-decoration: none;
         margin-top: 14px;
+        @media screen and (max-width: 767px){
+            font-size: 12px;
+        }
     }
 }
