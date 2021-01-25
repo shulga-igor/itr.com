@@ -128,5 +128,23 @@ $(document).ready(function(e){
     }
     
     new WOW().init();
+
+    $(document).on('click', '.custom-accordion .custom-accordion-header',function(e){
+      e.preventDefault();
+      var _this = $(this);
+      $('.custom-accordion-header').removeClass('open');
+      $('.custom-accordion-content').slideUp();
+
+      console.log('test');
+      _this.addClass('open');
+      _this.siblings('.custom-accordion-content').slideToggle('300', function(){
+        $('html, body').animate({
+          scrollTop: _this.offset().top
+        }, 400);
+      });
+
+      
+    })
+    
     
 })

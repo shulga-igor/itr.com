@@ -47,15 +47,15 @@
     }
 
     .title{
+        span{
+            display: inline-block;
+        }
         @media screen and (max-width: 991px){
             text-align: center;
         }
         @media screen and (max-width: 640px){
             br{
                 display: none;
-            }
-            span{
-                display: inline-block;
             }
         }
     }
