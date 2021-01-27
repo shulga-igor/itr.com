@@ -8,12 +8,20 @@
 .simple-text{
     background-color: #f5f5f5;
     padding: 55px 0;
+    &.white{
+        background-color: #fff;
+    }
     .inner{
         @include inner;
     }
     @media screen and (max-width: 991px){
         .link-with-arrow {
             font-size: 24px;
+        }
+    }
+    &.wide{
+        .inner{
+            @include inner;
         }
     }
 }
@@ -104,6 +112,9 @@
                 text-align: left;
             }
         }
+        a{
+            color: #2754a7;
+        }
         .under-list{
             margin-bottom: 0;
             font-size: 24px;
@@ -126,7 +137,7 @@
                 &:before{
                     content: '';
                     position: absolute;
-                    top: 7px;
+                    top: 12px;
                     left: 0;
                     width: 8px;
                     height: 8px;
@@ -139,4 +150,95 @@
     }
 
 
+}
+
+
+.search-form{
+    text-align: center;
+    label{
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 19px;
+    }
+
+    .search-input{
+        border: 2px solid #d3d3d3;
+        background-color: #ffffff;
+        font-size: 18px;
+        padding: 25px;
+        width: 100%;
+        max-width: 715px;
+        &:focus{
+            border: 2px solid $primary-color;
+        }
+    }
+}
+
+.table{
+    border: 2px solid #d3d3d3;
+    &-row{
+        border-bottom: 2px solid #d3d3d3;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+        &:nth-child(even){
+            background-color: #f5f5f5;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &-cell{
+        padding: 20px 10px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.6;
+        @media screen and (max-width: 991px){
+            font-size: 18px;
+        }
+        &:first-child{
+            max-width: 335px;
+        }
+        &:last-child{
+            border-left: 2px solid #d3d3d3;
+            @media screen and (max-width: 767px){
+                border-left: none;
+                border-top: 2px solid #d3d3d3;
+                
+            }
+        }
+    }
+}
+
+.text-list{
+    &.list{
+        list-style: none;
+        padding: 0;
+        margin: 0 0 50px 0;
+        li{
+            padding: 0 0 0 20px;
+            position: relative;
+            font-size: 24px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 767px){
+                font-size: 18px;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $primary-color;
+            }
+            
+        }
+    }
 }

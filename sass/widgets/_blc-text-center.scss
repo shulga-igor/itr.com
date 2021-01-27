@@ -5,6 +5,15 @@
         @include inner-min;
     }
 
-    
+    &.min-pad{
+        padding-top: 0;
+
+    }
+
+    &.wide{
+        .inner{
+            @include inner;
+        }
+    }
 }
 

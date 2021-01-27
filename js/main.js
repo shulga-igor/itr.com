@@ -132,6 +132,11 @@ $(document).ready(function(e){
     $(document).on('click', '.custom-accordion .custom-accordion-header',function(e){
       e.preventDefault();
       var _this = $(this);
+
+      if(_this.hasClass('open')){
+        return false;
+      }
+      
       $('.custom-accordion-header').removeClass('open');
       $('.custom-accordion-content').slideUp();
 
