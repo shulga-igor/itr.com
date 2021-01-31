@@ -59,6 +59,13 @@
             }
         }
     }
+    .sub-title{
+        @media screen and (max-width: 640px){
+            br{
+                display: none;
+            }
+        }
+    }
     .left{
         flex: 1;
     }

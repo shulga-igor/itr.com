@@ -424,3 +424,8 @@ body{
 .pad-none{
   padding: 0!important;
 }
+.mob-text-left{
+ @media screen and (max-width: 767px) {
+   text-align: left!important;
+ } 
+}

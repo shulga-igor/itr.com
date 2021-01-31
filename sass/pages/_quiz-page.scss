@@ -245,6 +245,8 @@
                 }
             }
         }
+
+       
         span{
             display: block;
             width: 100%;
@@ -414,6 +416,9 @@
             @media screen and (max-width: 991px){
                 padding: 15px;
             }
+        }
+        textarea{
+            min-height: 132px;
         }
         .min-text{
             margin: 0;
