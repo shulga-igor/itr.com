@@ -156,5 +156,51 @@ $(document).ready(function(e){
       
     })
     
+
+    function tabs(){
+      var wrap = $('.tabs');
+      var link;
+      var headerItem = wrap.find('.tab-header-item');
+      var headerItemLink = headerItem.find('a');
+      var select = wrap.find('.tabs .wrap-select select');
+
+      var tabBody = wrap.find('.tab-body');
+      var firstItem = headerItem.eq(0).find('a');
+
+      headerItem.eq(0).find('a').addClass('active');
+      tabBody.find(firstItem.data('link')).addClass('show');
+
+
+      function changeTab(link){
+        var headerLink = $('.tab-header-item a[data-link=' + link + ']');
+        headerItemLink.removeClass('active');
+        headerLink.addClass('active');
+        
+
+        $('.tabs .wrap-select select option[data-link=' + link + ']').attr('selected','selected');
+      }
+      
+     $(document).on('click', '.tab-header-item a', function(e){
+       e.preventDefault();
+       link = $(this).data('link');
+        tabBody.find('.tab-body-page').removeClass('show');
+
+        changeTab(link);
+        tabBody.find(link).addClass('show');
+     })
+
+     $(document).on('change', '.tabs .wrap-select select', function(e){ 
+      var element = $(this).find('option:selected'); 
+        link = element.data("link");
+
+        tabBody.find('.tab-body-page').removeClass('show');
+        tabBody.find(link).addClass('show');
+
+        changeTab(link);
+      })
+
+    }
+
+    tabs();
     
 })

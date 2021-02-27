@@ -5,6 +5,15 @@
         @include inner-min;
     }
 
+    &.border-full{
+        .inner{
+            @include inner;
+        }
+        &.bottom{
+            border-bottom: 1px solid #d3d3d3;
+        }
+    }
+
     &.min-pad{
         padding-top: 0;
 
@@ -14,6 +23,20 @@
         .inner{
             @include inner;
         }
+    }
+
+    .title{
+        margin-bottom: 20px;
+        span{
+            color: $primary-color;
+            display: inline-block;
+        }
+    }
+    .sub-title{
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        
     }
 }
 
